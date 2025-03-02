@@ -167,23 +167,23 @@ body {
 }
 
 .letter_open p {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
 .letter_open span {
-    display: block;
-    margin-top: 8px;
-  }
+  display: block;
+  margin-top: 8px;
+}
 
 .letter_open h4 {
   margin-bottom: 10px;
-  font-size: 23px;
+  font-size: 22px;
 }
 
 .letter_open h5 {
   margin-top: 10px;
-  font-size: 23px;
+  font-size: 22px;
 }
 
 .letter_open .close {
@@ -199,7 +199,7 @@ body {
 }
 
 audio {
-    position: absolute;
-    top: -10000px;
-    left: -100000px;
+  position: absolute;
+  top: -10000px;
+  left: -100000px;
 }
