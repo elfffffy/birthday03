@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD❤️박서영</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function () {
+            let wrapper = $('.wrapper');
+            let lidOne = $('.lid.one');
+            let lidTwo = $('.lid.two');
+            let letter = $('.letter');
+            let seeButton = $('.more_btn');
+            let letterOpen = $('.letter_open');
+            let closeButton = $('.close');
+
+
+            wrapper.click(function () {
+                lidOne.addClass('on');
+                lidTwo.addClass('on');
+                letter.addClass('on');
+                seeButton.delay(800).fadeIn();
+
+            })
+
+
+            seeButton.click(function () {
+                letterOpen.fadeIn();
+                wrapper.fadeOut();
+            })
+
+            closeButton.click(function(){
+                letterOpen.fadeOut();
+                wrapper.fadeIn();
+            })
+        })//script end
+    </script>
+</head>
+
+<body>
+    <audio src="./birthday_music.mp3" autoplay loop controls ></audio>
+
+    <button></button>
+    <div class="inner">
+        <div class="wrapper">
+            <div class="lid one"></div>
+            <div class="lid two"></div>
+            <div class="envelope"></div>
+            <div class="letter">
+                <p>🌟0303🌟<br>
+                    Happy 서영 Day</p>
+            </div>
+            <button class="more_btn">👉🏻Click here👈🏻</button>
+        </div>
+    </div>
+
+    <div class="letter_open">
+        <div class="text">
+            <h4>To. 서영</h4>
+            <p>박서영 생일축하해애~!~!!🎉
+                <br>맛있는거 많이 먹고! 케이크도 불고! 소원도 빌고! 행복한 하루 보내쟈고!
+                <br>너가 정말 이 괴정을 떠나서 너무너무 아쉽지만, 그래도 종종 만나서 맛있는 것도 먹고, 같이 게임도 하고, 이런 저런 얘기들도 나눌 수 있어서 너무너무 좋음..❣️ 예전이나 지금이나 앞으로도 영원하자🫶
+                <br>올해는 둘 다 취준하느라 바쁠텐데 우리 열심히 잘해보자🔥힘든 일 있으면 언제든지 연락하고! 큰 힘은 아닐지라도 작은 웃음이라도 줄게😉
+                <br>생일 너무너무 축하하구 한 번 또 놀쟈고~!
+                <br><span>p.s. 올해도 티모한테 생일 축하 부탁했는데, 버섯 농사 때문에 바빠서 못 온대..🥲</span>
+            </p>
+            <h5>From. 정원</h5>
+        </div><!-- .text end -->
+        <button class="close">닫기</button>
+    </div><!-- .letter open end -->
+    </section>
+</body>
+
+</html>
